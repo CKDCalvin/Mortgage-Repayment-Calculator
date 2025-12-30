@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <section class="form">
+    <div class="filloutForm" id="form">
+      <nav>
+        <h2 class="colorB">Mortgage Calculator</h2>
+        <button type="reset" id="clr-btn">Clear All</button>
+      </nav>
+      <form id="inputForm">
+        <label for="mrtg-amnt">Mortgage Amount</label><br>
+        <input type="text" id="mrtg-amnt" class="frm" placeholder="£"><br>
+
+        <div id="inpts">
+          <div class="inpt">
+            <label for="mrtg-trm">Mortgage Term</label><br>
+            <input type="text" id="mrtg-trm" class="frm" placeholder="years"><br>
+          </div>
+
+          <div class="inpt">
+            <label for="mrtg-amnt">Interest Rate</label><br>
+            <input type="text" id="int-rt" class="frm" placeholder="%"><br>
+          </div>
+        </div>
+
+        <p class="mrtg-typ">Mortgage Type</p>
+        <div class="rd">
+          <label class="di" for="rpymnt">
+            <input type="radio" id="rpymnt" value="Repayment" name="mortgageType" value="div1" class="rad">
+            <p class="colorB">Repayment</p>
+          </label>
+
+          <label class="di" for="intrstonly">
+            <input type="radio" id="intrstonly" name="mortgageType" value="Interest Only" class="rad">
+            <p class="colorB">Intrest Only</p>
+          </label>
+        </div>
+
+        <button id="calc-btn" class="colorB clc" tabindex="0">
+          <img src="./assets/images/icon-calculator.svg">
+          Calculate Repayments
+        </button>
+      </form>
+    </div>
+
+    <!-- Empty results start -->
+
+
+    <div class="result-pg">
+      <div class="results-pg" id="results-empty">
+        <img src="./assets/images/illustration-empty.svg">
+        <h2>Results shown here</h2>
+
+        <p>Complete the form and click “calculate repayments” to see what
+          your monthly repayments would be.
+        </p>
+        <!-- Empty results end -->
+      </div>
+      <div class="compltd-frm" id="results-filled">
+        <!-- Completed results start -->
+
+        <h2>Your results</h2>
+
+        <p>Your results are shown below based on the information you provided.
+          To adjust the results, edit the form and click “calculate repayments” again.</p>
+
+        <div id="resulto">
+          <p>Your monthly repayments</p>
+          <p class="monthly"></p>
+          <hr>
+          <p>Total you'll repay over the term</p>
+          <p class="total"></p>
+        </div>
+
+
+        <!-- Completed results end -->
+      </div>
+    </div>
+  </section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/">Calvin Kugonza</a>.
+  </div>
+
+  <div id="error-popup" class="popup">
+    <div class="popup-content">
+      <p id="error-message"></p>
+      <button id="close-popup">OK</button>
+    </div>
+  </div>
+
+  <script src="./function.js"></script>
+</body>
+
+</html>
