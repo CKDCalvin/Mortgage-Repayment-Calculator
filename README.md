@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://mortgagerepaymentclc.netlify.app/)
+- Live Site URL: [Add live site URL here](https://mortgagerepaymentclc.netlify.app/)
 
 ## My process
 
@@ -62,7 +62,7 @@ I will continue using the DOM and implementing event listeners.
 
 ## Author
 
-- Website - [Calvin Kugonza](https://www.your-site.com)
+- Website - [Calvin Kugonza](https://mortgagerepaymentclc.netlify.app/)
 - Frontend Mentor - [@CKDCalvin](https://www.frontendmentor.io/profile/CKDCalvin)
 - Github - [@CKDCalvin](https://github.com/CKDCalvin)
 
